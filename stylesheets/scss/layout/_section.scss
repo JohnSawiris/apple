@@ -1,6 +1,10 @@
 .section.bg {
   @include background('../../img/iphone_x_design_film_small.jpg', 68%, 3%, cover);
   color: $white;
+  @include desktop {
+    height: 430px;
+    background-position: 68% 1%;
+  }
   .content {
     h2 {
       margin: 3rem 0 1rem;

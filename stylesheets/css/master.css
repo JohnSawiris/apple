@@ -449,11 +449,12 @@ template {
   align-items: center;
   position: relative;
   background-color: rgba(0, 0, 0, 0.95);
-  height: 48px;
+  height: 60px;
 }
 @media (min-width: 1020px) {
   .nav-bar {
     justify-content: space-around;
+    height: 48px;
   }
 }
 .nav-bar .nav-btn {
@@ -498,7 +499,7 @@ template {
 }
 .nav-bar .links {
   position: absolute;
-  top: 48px;
+  top: 60px;
   height: 0;
   width: 100%;
   text-align: center;
@@ -513,6 +514,7 @@ template {
     flex-basis: auto;
     width: auto;
     order: 1;
+    background: none;
   }
 }
 .nav-bar .links a {
@@ -569,6 +571,12 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+}
+@media (min-width: 1020px) {
+  .section.bg {
+    height: 430px;
+    background-position: 68% 1%;
+  }
 }
 .section.bg .content h2 {
   margin: 3rem 0 1rem;
@@ -751,56 +759,74 @@ template {
   .row .col-lg-1 {
     flex-basis: 7.3333333333%;
     width: 7.3333333333%;
+    margin-bottom: 1%;
   }
   .row .col-lg-2 {
     flex-basis: 15.6666666667%;
     width: 15.6666666667%;
+    margin-bottom: 1%;
   }
   .row .col-lg-3 {
     flex-basis: 24%;
     width: 24%;
+    margin-bottom: 1%;
   }
   .row .col-lg-4 {
     flex-basis: 32.3333333333%;
     width: 32.3333333333%;
+    margin-bottom: 1%;
   }
   .row .col-lg-5 {
     flex-basis: 40.6666666667%;
     width: 40.6666666667%;
+    margin-bottom: 1%;
   }
   .row .col-lg-6 {
     flex-basis: 49%;
     width: 49%;
+    margin-bottom: 1%;
   }
   .row .col-lg-7 {
     flex-basis: 57.3333333333%;
     width: 57.3333333333%;
+    margin-bottom: 1%;
   }
   .row .col-lg-8 {
     flex-basis: 65.6666666667%;
     width: 65.6666666667%;
+    margin-bottom: 1%;
   }
   .row .col-lg-9 {
     flex-basis: 74%;
     width: 74%;
+    margin-bottom: 1%;
   }
   .row .col-lg-10 {
     flex-basis: 82.3333333333%;
     width: 82.3333333333%;
+    margin-bottom: 1%;
   }
   .row .col-lg-11 {
     flex-basis: 90.6666666667%;
     width: 90.6666666667%;
+    margin-bottom: 1%;
   }
   .row .col-lg-12 {
     flex-basis: 99%;
     width: 99%;
+    margin-bottom: 1%;
   }
 }
 footer {
   margin-top: 3rem;
-  padding: 2rem 1rem 0;
+  padding: 1rem 1rem 0;
   background-color: rgba(0, 0, 0, 0.95);
+}
+footer .upgrade {
+  padding: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ffffff;
 }
 footer p {
   color: #f7f7f7;
@@ -838,7 +864,7 @@ img {
 }
 @media (min-width: 700px) and (max-width: 1019px) {
   .wrapper {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
   }
 }

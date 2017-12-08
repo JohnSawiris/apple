@@ -28,7 +28,7 @@ img {
   display: flex;
   flex-direction: column;
   @include tablet {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
   }
   @include desktop {

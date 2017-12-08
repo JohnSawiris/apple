@@ -1,7 +1,13 @@
 footer {
   margin-top: 3rem;
-  padding: 2rem 1rem 0;
+  padding: 1rem 1rem 0;
   background-color: $black;
+  .upgrade {
+    padding: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $white;
+  }
   p {
     color: $off-white;
     font-size: 0.7rem;
