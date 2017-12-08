@@ -1,0 +1,52 @@
+@mixin gridSmall {
+  @for $i from 1 through 12 {
+    $value: ($i / 12) * 100% - 1;
+
+    .col-sm-#{$i} {
+      flex-basis: $value;
+      width: $value;
+    }
+  }
+}
+
+@mixin gridMed {
+  @for $i from 1 through 12 {
+    $value: ($i / 12) * 100% - 1;
+
+    .col-md-#{$i} {
+      flex-basis: $value;
+      width: $value;
+    }
+  }
+}
+
+@mixin gridLarge {
+  @for $i from 1 through 12 {
+    $value: ($i / 12) * 100% - 1;
+
+    .col-lg-#{$i} {
+      flex-basis: $value;
+      width: $value;
+    }
+  }
+}
+
+@mixin background($image, $x, $y, $size) {
+  background-image: url($image);
+  background-position: $x $y;
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+
+//Media Queries
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1}){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

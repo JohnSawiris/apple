@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  @include gridSmall;
+}
+
+
+@include tablet {
+  .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1rem auto 0;
+      @include gridMed;
+    };
+  }
+
+@include desktop {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    @include gridLarge;
+  }
+}

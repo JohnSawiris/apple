@@ -1,8 +1,5 @@
 .section.bg {
-  background-image: url(../../img/iphone_x_design_film_small.jpg);
-  background-position: 89% 3%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background('../../img/iphone_x_design_film_small.jpg', 68%, 3%, cover);
   color: $white;
   .content {
     h2 {
@@ -14,9 +11,10 @@
     }
   }
 }
+
 .section {
   background-color: $off-white;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
   margin: .5rem 0 0;
   text-align: center;
   font-weight: 600;
