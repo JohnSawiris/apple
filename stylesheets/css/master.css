@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -492,7 +492,7 @@ template {
   height: 0;
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(26, 26, 26, 0.95);
   transition: .4s ease-in-out;
 }
 .nav-bar .links a {
@@ -510,7 +510,7 @@ template {
 }
 .nav-bar .links a:hover {
   text-decoration: underline;
-  background-color: rgba(51, 51, 51, 0.95);
+  background-color: rgba(26, 26, 26, 0.95);
 }
 .nav-bar .links.open {
   height: 310px;
@@ -523,12 +523,66 @@ template {
   margin-right: 15px;
 }
 
+.section.bg {
+  background-image: url(../../img/iphone_x_design_film_small.jpg);
+  background-position: 89% 3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.section.bg .content h2 {
+  margin: 3rem 0 1rem;
+}
+.section.bg .content a {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.section {
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+  margin: .5rem 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+.section .content {
+  display: block;
+  margin: 2rem auto 4rem;
+}
+.section .content h2 {
+  font-size: 3rem;
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+.section .content p {
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+}
+.section .content a {
+  margin: 0 1rem;
+  color: #0070c9;
+  text-decoration: none;
+}
+.section .content a:hover {
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=master.css.map */

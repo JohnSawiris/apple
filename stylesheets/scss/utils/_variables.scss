@@ -1,9 +1,10 @@
 $black: rgba(0, 0, 0, .95);
 $white: #ffffff;
 $off-white: #f7f7f7;
+$blue: #0070c9;
 
 //Lighter Colors
-$lighter-black: lighten($black, 20%);
+$lighter-black: lighten($black, 10%);
 
 //Darker Colors
 $darker-white: darken($off-white, 40%);
