@@ -10,6 +10,8 @@
     width: 20px;
     height: 20px;
     margin-left: 15px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
     transform: rotate(0deg);
     span {
       position: absolute;
@@ -17,6 +19,8 @@
       height: 1px;
       width: 100%;
       border-radius: 3px;
+      transition: .5s ease-in-out;
+      transform: rotate();
     }
     span:nth-child(1) {
       top: 10px;
@@ -27,22 +31,32 @@
   }
   .nav-btn.click {
     transform: rotate(90deg);
+    span:nth-child(1) {
+      bottom: 10px;
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      top: 10px;
+      transform: rotate(-45deg);
+    }
   }
   .links {
     position: absolute;
     top: 48px;
+    height: 0;
     width: 100%;
     text-align: center;
     background-color: $black;
+    transition: .4s ease-in-out;
     a {
-      display: block;
+      opacity: 0;
+      display: none;
       color: $white;
-      width: 75%;
+      width: 100%;
       margin: auto;
       text-decoration: none;
       padding: 1rem;
-      transition: .25s ease-in;
-      border-bottom: 1px solid $white;
+      transition: all .25s ease-in;
       &:last-child {
         border-bottom: none;
       }
@@ -50,6 +64,13 @@
         text-decoration: underline;
         background-color: $lighter-black;
       }
+    }
+  }
+  .links.open {
+    height: 310px;
+    a {
+      display: block;
+      opacity: 1;
     }
   }
   .apple-logo {

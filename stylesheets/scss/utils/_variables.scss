@@ -3,8 +3,10 @@ $white: #ffffff;
 $off-white: #f7f7f7;
 
 //Lighter Colors
-$lighter-black: lighten($black, 30%);
+$lighter-black: lighten($black, 20%);
 
+//Darker Colors
+$darker-white: darken($off-white, 40%);
 
 //Font Families
 $primary-font: 'Open Sans', sans-serif;

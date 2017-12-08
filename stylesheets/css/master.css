@@ -436,6 +436,11 @@ template {
 .nav-bar .apple-logo, .nav-bar .shopping-bag {
   font-size: 1.3rem;
   color: #ffffff;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+.nav-bar .apple-logo:hover, .nav-bar .shopping-bag:hover {
+  color: #919191;
 }
 
 .nav-bar {
@@ -451,6 +456,8 @@ template {
   width: 20px;
   height: 20px;
   margin-left: 15px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
   transform: rotate(0deg);
 }
 .nav-bar .nav-btn span {
@@ -459,6 +466,8 @@ template {
   height: 1px;
   width: 100%;
   border-radius: 3px;
+  transition: .5s ease-in-out;
+  transform: rotate();
 }
 .nav-bar .nav-btn span:nth-child(1) {
   top: 10px;
@@ -469,29 +478,46 @@ template {
 .nav-bar .nav-btn.click {
   transform: rotate(90deg);
 }
+.nav-bar .nav-btn.click span:nth-child(1) {
+  bottom: 10px;
+  transform: rotate(45deg);
+}
+.nav-bar .nav-btn.click span:nth-child(2) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
 .nav-bar .links {
   position: absolute;
   top: 48px;
+  height: 0;
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.95);
+  transition: .4s ease-in-out;
 }
 .nav-bar .links a {
-  display: block;
+  opacity: 0;
+  display: none;
   color: #ffffff;
-  width: 75%;
+  width: 100%;
   margin: auto;
   text-decoration: none;
   padding: 1rem;
-  transition: .25s ease-in;
-  border-bottom: 1px solid #ffffff;
+  transition: all .25s ease-in;
 }
 .nav-bar .links a:last-child {
   border-bottom: none;
 }
 .nav-bar .links a:hover {
   text-decoration: underline;
-  background-color: rgba(77, 77, 77, 0.95);
+  background-color: rgba(51, 51, 51, 0.95);
+}
+.nav-bar .links.open {
+  height: 310px;
+}
+.nav-bar .links.open a {
+  display: block;
+  opacity: 1;
 }
 .nav-bar .shopping-bag {
   margin-right: 15px;
