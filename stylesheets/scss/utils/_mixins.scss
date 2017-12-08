@@ -16,6 +16,7 @@
     .col-md-#{$i} {
       flex-basis: $value;
       width: $value;
+      margin-bottom: 1%;
     }
   }
 }

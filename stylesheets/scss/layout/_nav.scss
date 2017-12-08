@@ -5,6 +5,9 @@
   position: relative;
   background-color: $black;
   height: 48px;
+  @include desktop {
+    justify-content: space-around;
+  }
   .nav-btn {
     position: relative;
     width: 20px;
@@ -13,6 +16,9 @@
     cursor: pointer;
     transition: .5s ease-in-out;
     transform: rotate(0deg);
+    @include desktop {
+      display: none;
+    }
     span {
       position: absolute;
       background-color: $white;
@@ -48,6 +54,14 @@
     text-align: center;
     background-color: $lighter-black;
     transition: .4s ease-in-out;
+    @include desktop {
+      display: flex;
+      height: 100%;
+      position: static;
+      flex-basis: auto;
+      width: auto;
+      order: 1;
+    }
     a {
       opacity: 0;
       display: none;
@@ -57,12 +71,18 @@
       text-decoration: none;
       padding: 1rem;
       transition: all .25s ease-in;
-      &:last-child {
-        border-bottom: none;
+      @include desktop {
+        display: inline;
+        opacity: 1;
+        width: auto;
+        padding: 0 1rem;
       }
       &:hover {
         text-decoration: underline;
         background-color: $lighter-black;
+        @include desktop {
+          background-color: transparent;
+        }
       }
     }
   }
@@ -75,9 +95,15 @@
   }
   .apple-logo {
     @extend %nav-icon;
+    @include desktop {
+      order: 0;
+    }
   }
   .shopping-bag {
     @extend %nav-icon;
     margin-right: 15px;
+    @include desktop {
+      order: 2;
+    }
   }
 }

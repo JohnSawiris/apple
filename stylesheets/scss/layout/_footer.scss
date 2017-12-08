@@ -1,0 +1,19 @@
+footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem 0;
+  background-color: $black;
+  p {
+    color: $off-white;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .footer-nav {
+    padding-bottom: 2rem;
+    a {
+      text-decoration: none;
+      font-size: .7rem;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+}

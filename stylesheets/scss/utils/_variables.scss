@@ -5,13 +5,14 @@ $blue: #0070c9;
 
 //Lighter Colors
 $lighter-black: lighten($black, 10%);
+$light-black: lighten($black, 60%);
 
 //Darker Colors
-$darker-white: darken($off-white, 40%);
+$darker-white: darken($off-white, 70%);
 
 //Font Families
 $primary-font: 'Open Sans', sans-serif;
 
 //Breakpoints
 $tablet: 700px;
-$desktop: 1050px;
+$desktop: 1020px;

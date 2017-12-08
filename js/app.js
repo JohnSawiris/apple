@@ -7,4 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.toggle('click');
     navContainer.classList.toggle('open');
   });
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 1020) {
+      navBtn.classList.remove('click');
+      navContainer.classList.remove('open');
+    }
+  });
 });
