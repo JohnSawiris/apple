@@ -1,1 +1,18 @@
-@import "base/reset";
+@import "base/reset",
+        "base/typography",
+        "components/buttons",
+        "utils/mixins",
+        "utils/variables",
+        "utils/placeholder",
+        "layout/nav",
+        "layout/section",
+        "layout/grid",
+        "layout/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+}
