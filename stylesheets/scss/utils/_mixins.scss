@@ -33,6 +33,11 @@
   }
 }
 
+@mixin center($width, $value: 0) {
+  width: $width;
+  margin: $value auto;
+}
+
 @mixin background($image, $x, $y, $size) {
   background-image: url($image);
   background-position: $x $y;

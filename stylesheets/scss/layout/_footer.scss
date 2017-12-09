@@ -1,12 +1,45 @@
 footer {
   margin-top: 3rem;
   padding: 1rem 1rem 0;
-  background-color: $black;
+  background-color: $lighter-black;
+  color: $white;
+  .footer-links {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+    @include desktop {
+      display: flex;
+      @include center(1000px);
+    }
+  }
   .upgrade {
     padding: 1rem;
     line-height: 1.4rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid $white;
+    @include desktop {
+      @include center(1000px);
+    }
+    p {
+      font-weight: 500;
+      font-size: .85rem;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      margin-top: .5rem;
+      a {
+        color: $white;
+        font-size: .9rem;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
   p {
     color: $off-white;
